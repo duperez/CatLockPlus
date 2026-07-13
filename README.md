@@ -69,7 +69,7 @@ Isso é necessário uma única vez. Como o projeto é open source, você pode au
 Precisa apenas das ferramentas de linha de comando da Apple (`xcode-select --install`):
 
 ```bash
-git clone https://github.com/SEU_USUARIO/CatLockPlus.git
+git clone https://github.com/duperez/CatLockPlus.git
 cd CatLockPlus
 bash build.sh
 open CatLockPlus.app
