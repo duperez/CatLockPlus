@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CatLockPlus — trave o Mac pro seu gato deitar em paz</title>
+<meta name="description" content="App gratuito e open source que trava teclado, mouse, trackpad e Touch Bar do seu Mac. Feito para donos de gatos.">
+<meta property="og:title" content="CatLockPlus 🐱🔒">
+<meta property="og:description" content="Trave teclado, mouse e Touch Bar do seu Mac. Grátis e open source.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d1d1f;
+    --muted: #6e6e73;
+    --card: #f5f5f7;
+    --accent: #0071e3;
+    --accent-fg: #ffffff;
+    --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101013;
+      --fg: #f5f5f7;
+      --muted: #98989d;
+      --card: #1c1c21;
+      --accent: #2997ff;
+      --accent-fg: #0b0b0e;
+      --border: #2c2c31;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  header { text-align: center; padding: 72px 0 48px; }
+  .logo { font-size: 72px; line-height: 1; }
+  h1 { font-size: 44px; letter-spacing: -0.02em; margin: 16px 0 8px; }
+  .tagline { font-size: 21px; color: var(--muted); max-width: 480px; margin: 0 auto; }
+  .cta {
+    display: inline-block;
+    margin-top: 32px;
+    background: var(--accent);
+    color: var(--accent-fg);
+    font-size: 19px;
+    font-weight: 600;
+    padding: 14px 36px;
+    border-radius: 999px;
+    text-decoration: none;
+  }
+  .cta:hover { filter: brightness(1.1); }
+  .cta-note { display: block; margin-top: 12px; font-size: 13px; color: var(--muted); }
+  section { padding: 32px 0; }
+  h2 { font-size: 26px; margin-bottom: 16px; letter-spacing: -0.01em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+  }
+  .card .emoji { font-size: 28px; }
+  .card h3 { font-size: 16px; margin: 8px 0 4px; }
+  .card p { font-size: 14px; color: var(--muted); }
+  ol { padding-left: 24px; }
+  ol li { margin-bottom: 10px; }
+  code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-size: 0.9em;
+  }
+  .box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+  }
+  a { color: var(--accent); }
+  footer {
+    text-align: center;
+    padding: 48px 0 64px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="logo">🐱🔒</div>
+    <h1>CatLockPlus</h1>
+    <p class="tagline">Trava teclado, mouse, trackpad e Touch Bar do seu Mac. Para o seu gato deitar onde ele quiser, sem pausar a sua série.</p>
+    <a class="cta" href="https://github.com/duperez/CatLockPlus/releases/latest/download/CatLockPlus.zip">Baixar para Mac</a>
+    <span class="cta-note">Grátis e open source · macOS 11 ou superior · Intel e Apple Silicon</span>
+  </header>
+
+  <section>
+    <div class="grid">
+      <div class="card">
+        <div class="emoji">⌨️</div>
+        <h3>Teclado travado</h3>
+        <p>Todas as teclas bloqueadas, menos o atalho de destravar (você escolhe qual).</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🖱️</div>
+        <h3>Mouse congelado</h3>
+        <p>Cursor parado. Cliques, scroll e gestos do trackpad também não passam.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🎚️</div>
+        <h3>Touch Bar protegida</h3>
+        <p>Brilho, volume e mídia bloqueados nos MacBooks com Touch Bar.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🔓</div>
+        <h3>Sem sustos</h3>
+        <p>Se o app fechar, tudo destrava na hora. Impossível ficar trancado pra fora.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Como instalar</h2>
+    <div class="box">
+      <ol>
+        <li>Clique em <strong>Baixar para Mac</strong> ali em cima e descompacte o zip</li>
+        <li>Arraste o <strong>CatLockPlus</strong> para a pasta <strong>Aplicativos</strong></li>
+        <li>Na primeira vez, abra com o <strong>botão direito → Abrir</strong> e confirme. O aviso do macOS aparece porque o app não é assinado pela Apple (assinar custa US$ 99/ano e este projeto é gratuito), não porque há algo errado</li>
+        <li>Ative a permissão em <strong>Ajustes do Sistema → Privacidade e Segurança → Acessibilidade</strong>. É ela que permite o app bloquear o teclado</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <h2>Como usar</h2>
+    <div class="box">
+      <p>Pressione <code>Ctrl + L</code> para travar quando o gato se aproximar. Pressione de novo para destravar. O ícone 🐱 na barra de menu mostra o estado e dá acesso às preferências, onde você pode escolher outro atalho.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>É seguro?</h2>
+    <div class="box">
+      <p>O CatLockPlus não registra teclas, não coleta dados e não acessa a internet. O <a href="https://github.com/duperez/CatLockPlus">código-fonte é aberto</a> e cabe em um arquivo: qualquer pessoa pode auditar o que ele faz. Spoiler: só bloqueia gato.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Feito por causa de um gato · <a href="https://github.com/duperez/CatLockPlus">GitHub</a> · Licença MIT</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
